@@ -17,7 +17,7 @@ public class DeliveryCanceled extends AbstractEvent {
     private String address;
     private String status;
 
-    public DeliveryCanceled(DeliveryMng aggregate){
+    public DeliveryCanceled(Delivery aggregate){
         super(aggregate);
     }
     public DeliveryCanceled(){

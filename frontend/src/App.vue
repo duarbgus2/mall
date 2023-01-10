@@ -39,13 +39,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key="orderMngs"
-                        to="/orderMngs"
+                        key="orders"
+                        to="/orders"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        OrderMng
+                        Order
                     </v-list-item>
 
 
@@ -72,26 +72,26 @@
 
                     <v-list-item
                         class="px-2"
-                        key="deliveryMngs"
-                        to="/deliveryMngs"
+                        key="deliveries"
+                        to="/deliveries"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        DeliveryMng
+                        Delivery
                     </v-list-item>
 
 
 
                     <v-list-item
                         class="px-2"
-                        key="stockMngs"
-                        to="/stockMngs"
+                        key="stocks"
+                        to="/stocks"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        StockMng
+                        Stock
                     </v-list-item>
 
 
@@ -129,16 +129,16 @@
                                             class="mx-auto"
                                             outlined
                                             rounded
-                                            key="orderMngs"
-                                            to="/orderMngs"
+                                            key="orders"
+                                            to="/orders"
                                             @click="changeUrl()"
                                             color="deep-purple lighten-2"
                                             style="font-weight:500; font-size:20px; padding:15px; border:solid 2px; max-width:250px; overflow:hidden"
                                         >
-                                            OrderMng
+                                            Order
                                         </v-btn>
                                     </template>
-                                    <span>OrderMng</span>
+                                    <span>Order</span>
                                 </v-tooltip>
                             </v-card-actions>
                         </v-card>
@@ -223,16 +223,16 @@
                                             class="mx-auto"
                                             outlined
                                             rounded
-                                            key="deliveryMngs"
-                                            to="/deliveryMngs"
+                                            key="deliveries"
+                                            to="/deliveries"
                                             @click="changeUrl()"
                                             color="deep-purple lighten-2"
                                             style="font-weight:500; font-size:20px; padding:15px; border:solid 2px; max-width:250px; overflow:hidden"
                                         >
-                                            DeliveryMng
+                                            Delivery
                                         </v-btn>
                                     </template>
-                                    <span>DeliveryMng</span>
+                                    <span>Delivery</span>
                                 </v-tooltip>
                             </v-card-actions>
                         </v-card>
@@ -259,16 +259,16 @@
                                             class="mx-auto"
                                             outlined
                                             rounded
-                                            key="stockMngs"
-                                            to="/stockMngs"
+                                            key="stocks"
+                                            to="/stocks"
                                             @click="changeUrl()"
                                             color="deep-purple lighten-2"
                                             style="font-weight:500; font-size:20px; padding:15px; border:solid 2px; max-width:250px; overflow:hidden"
                                         >
-                                            StockMng
+                                            Stock
                                         </v-btn>
                                     </template>
-                                    <span>StockMng</span>
+                                    <span>Stock</span>
                                 </v-tooltip>
                             </v-card-actions>
                         </v-card>

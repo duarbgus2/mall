@@ -17,7 +17,7 @@ import mall.domain.*;
 @Service
 @Transactional
 public class PolicyHandler{
-    @Autowired StockMngRepository stockMngRepository;
+    @Autowired StockRepository stockRepository;
     
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString){}
@@ -32,7 +32,7 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        StockMng.stockDecrease(event);
+        Stock.stockDecrease(event);
         
 
         
@@ -49,7 +49,7 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        StockMng.stockIncrease(event);
+        Stock.stockIncrease(event);
         
 
         

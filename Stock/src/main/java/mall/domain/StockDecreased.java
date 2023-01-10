@@ -15,7 +15,7 @@ public class StockDecreased extends AbstractEvent {
     private String productImage;
     private Integer stock;
 
-    public StockDecreased(StockMng aggregate){
+    public StockDecreased(Stock aggregate){
         super(aggregate);
     }
     public StockDecreased(){

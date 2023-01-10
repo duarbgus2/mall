@@ -17,7 +17,7 @@ public class DeliveryStarted extends AbstractEvent {
     private String address;
     private String status;
 
-    public DeliveryStarted(DeliveryMng aggregate){
+    public DeliveryStarted(Delivery aggregate){
         super(aggregate);
     }
     public DeliveryStarted(){

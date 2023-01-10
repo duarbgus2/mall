@@ -5,18 +5,18 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 
-import OrderMngManager from "./components/listers/OrderMngCards"
-import OrderMngDetail from "./components/listers/OrderMngDetail"
+import OrderManager from "./components/listers/OrderCards"
+import OrderDetail from "./components/listers/OrderDetail"
 
 import SelectItemView from "./components/SelectItemView"
 import SelectItemViewDetail from "./components/SelectItemViewDetail"
 import SelectOrderView from "./components/SelectOrderView"
 import SelectOrderViewDetail from "./components/SelectOrderViewDetail"
-import DeliveryMngManager from "./components/listers/DeliveryMngCards"
-import DeliveryMngDetail from "./components/listers/DeliveryMngDetail"
+import DeliveryManager from "./components/listers/DeliveryCards"
+import DeliveryDetail from "./components/listers/DeliveryDetail"
 
-import StockMngManager from "./components/listers/StockMngCards"
-import StockMngDetail from "./components/listers/StockMngDetail"
+import StockManager from "./components/listers/StockCards"
+import StockDetail from "./components/listers/StockDetail"
 
 
 export default new Router({
@@ -24,14 +24,14 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
             {
-                path: '/orderMngs',
-                name: 'OrderMngManager',
-                component: OrderMngManager
+                path: '/orders',
+                name: 'OrderManager',
+                component: OrderManager
             },
             {
-                path: '/orderMngs/:id',
-                name: 'OrderMngDetail',
-                component: OrderMngDetail
+                path: '/orders/:id',
+                name: 'OrderDetail',
+                component: OrderDetail
             },
 
             {
@@ -55,25 +55,25 @@ export default new Router({
                 component: SelectOrderViewDetail
             },
             {
-                path: '/deliveryMngs',
-                name: 'DeliveryMngManager',
-                component: DeliveryMngManager
+                path: '/deliveries',
+                name: 'DeliveryManager',
+                component: DeliveryManager
             },
             {
-                path: '/deliveryMngs/:id',
-                name: 'DeliveryMngDetail',
-                component: DeliveryMngDetail
+                path: '/deliveries/:id',
+                name: 'DeliveryDetail',
+                component: DeliveryDetail
             },
 
             {
-                path: '/stockMngs',
-                name: 'StockMngManager',
-                component: StockMngManager
+                path: '/stocks',
+                name: 'StockManager',
+                component: StockManager
             },
             {
-                path: '/stockMngs/:id',
-                name: 'StockMngDetail',
-                component: StockMngDetail
+                path: '/stocks/:id',
+                name: 'StockDetail',
+                component: StockDetail
             },
 
 
